@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css?family=Rokkitt");
+
+/* ------------------------------
+   BASIC RESET
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ffffff;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
+
+
+/* ------------------------------
+   MAIN HEADING
+------------------------------ */
+
+h1 {
+    font-family: 'Rokkitt', serif;
+    text-align: center;
+    color: #fff;
+    font-size: 35px;
+    line-height: 1.2;
+    margin: 10px 0 20px;
+}
+
+
+/* ------------------------------
+   QUIZ CONTAINER
+------------------------------ */
+
+.quizContainer {
+    background-color: #000398;
+    border-radius: 8px;
+
+    width: 75%;
+    max-width: 900px;
+
+    margin: 50px auto 30px;
+
+    padding: 5px 20px 25px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* ------------------------------
+   QUESTION
+------------------------------ */
+
+.question {
+    font-family: 'Rokkitt', serif;
+
+    font-size: 2em;
+    line-height: 1.25;
+
+    width: 90%;
+    min-height: 50px;
+
+    margin: auto;
+
+    border-radius: 6px;
+
+    background-color: #f2f205;
+
+    text-align: center;
+
+    color: #27a663;
+
+    padding: 10px;
+
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+/* ------------------------------
+   ANSWER LIST
+------------------------------ */
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.choiceList {
+    font-family: 'Rokkitt', serif;
+    color: blueviolet;
+
+    width: 95%;
+    margin: 20px auto;
+}
+
+li {
+    font-family: 'Rokkitt', serif;
+
+    font-size: 1.5em;
+
+    color: #feb135;
+
+    display: flex;
+
+    align-items: center;
+
+    margin: 8px 0;
+
+    min-height: 42px;
+
+    line-height: 1.25;
+
+    cursor: pointer;
+
+    /* Improves touch interaction */
+    touch-action: manipulation;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* ------------------------------
+   RADIO BUTTON
+------------------------------ */
+
+input[type=radio] {
+    margin-right: 12px;
+
+    transform: scale(1.25);
+
+    vertical-align: middle;
+
+    flex-shrink: 0;
+
+    cursor: pointer;
+
+    /* Prevents accidental browser gesture interference */
+    touch-action: manipulation;
+}
+
+
+/* ------------------------------
+   MESSAGE
+------------------------------ */
+
+.quizMessage {
+    background-color: peachpuff;
+
+    border-radius: 6px;
+
+    width: 30%;
+
+    margin: 15px auto;
+
+    text-align: center;
+
+    padding: 5px;
+
+    font-family: 'Rokkitt', serif;
+
+    color: red;
+
+    line-height: 1.2;
+}
+
+
+/* ------------------------------
+   RESULT
+------------------------------ */
+
+.result {
+    font-family: 'Rokkitt', serif;
+
+    font-size: 2em;
+
+    width: 40%;
+
+    height: auto;
+
+    border-radius: 6px;
+
+    background-color: linen;
+
+    margin: 15px auto 35px;
+
+    text-align: center;
+
+    padding: 10px;
+
+    overflow-wrap: break-word;
+}
+
+
+/* ------------------------------
+   NEXT BUTTON
+------------------------------ */
+
+.nextButton {
+    display: block;
+
+    border: none;
+
+    border-radius: 6px;
+
+    width: 150px;
+
+    min-height: 60px;
+
+    text-align: center;
+
+    background-color: #cc0000;
+
+    color: #fff;
+
+    font-family: 'Rokkitt', serif;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    position: relative;
+
+    margin: 20px auto 0;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    /* Important for smartphones */
+    touch-action: manipulation;
+
+    -webkit-tap-highlight-color: transparent;
+
+    user-select: none;
+}
+
+
+/* Button feedback */
+
+.nextButton:active {
+    transform: scale(0.97);
+}
+
+
+/* ------------------------------
+   PARAGRAPHS
+------------------------------ */
+
+p {
+    font-family: 'Rokkitt', serif;
+}
+
+
+/* ==================================================
+   TABLETS
+================================================== */
+
+@media (max-width: 900px) {
+
+    .quizContainer {
+        width: 88%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .question {
+        font-size: 1.8em;
+        width: 94%;
+    }
+
+    .quizMessage {
+        width: 50%;
+    }
+
+    .result {
+        width: 60%;
+    }
+}
+
+
+/* ==================================================
+   SMARTPHONES
+================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .quizContainer {
+
+        width: calc(100% - 20px);
+
+        margin: 10px auto 20px;
+
+        padding: 10px 8px 20px;
+
+        border-radius: 8px;
+    }
+
+
+    h1 {
+        font-size: 26px;
+
+        line-height: 1.15;
+
+        margin: 5px 5px 15px;
+    }
+
+
+    .question {
+
+        width: 96%;
+
+        font-size: 1.45em;
+
+        line-height: 1.25;
+
+        padding: 12px 8px;
+
+        min-height: 50px;
+    }
+
+
+    .choiceList {
+
+        width: 96%;
+
+        margin: 18px auto;
+    }
+
+
+    li {
+
+        font-size: 1.25em;
+
+        min-height: 48px;
+
+        margin: 6px 0;
+
+        padding: 4px 2px;
+
+        line-height: 1.25;
+    }
+
+
+    input[type=radio] {
+
+        transform: scale(1.35);
+
+        margin-right: 13px;
+    }
+
+
+    .quizMessage {
+
+        width: 85%;
+
+        font-size: 1.1em;
+
+        padding: 7px;
+    }
+
+
+    .result {
+
+        width: 85%;
+
+        font-size: 1.6em;
+
+        margin-bottom: 25px;
+    }
+
+
+    .nextButton {
+
+        width: 170px;
+
+        min-height: 58px;
+
+        font-size: 17px;
+
+        padding: 10px;
+    }
+}
+
+
+/* ==================================================
+   VERY SMALL PHONES
+================================================== */
+
+@media (max-width: 380px) {
+
+    .quizContainer {
+        width: calc(100% - 12px);
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+
+    h1 {
+        font-size: 23px;
+    }
+
+
+    .question {
+        font-size: 1.3em;
+    }
+
+
+    li {
+        font-size: 1.15em;
+
+        min-height: 46px;
+    }
+
+
+    .nextButton {
+        width: 160px;
+    }
+}
