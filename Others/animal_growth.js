@@ -64,7 +64,7 @@ var questions = [
         choices: ["litter", "pussy", "fluff", "kitten", "foal", "chevron", "mitt"],
         correctAnswer: 3
     }, {
-        question: "A baby Donkey is called?",
+        question: "A baby Tilapia is called?",
         choices: ["tapia", "fishling", "gillet", "finicken", "fingerling", "fillet", "twink"],
         correctAnswer: 4
     }, {
