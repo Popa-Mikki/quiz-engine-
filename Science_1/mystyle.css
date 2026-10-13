@@ -186,7 +186,7 @@ input[type=radio] {
 
     font-size: 2em;
 
-    width: 40%;
+    width: 45%;
 
     height: auto;
 
@@ -435,4 +435,145 @@ p {
     .nextButton {
         width: 160px;
     }
-      }
+}
+
+
+
+/* =========================================
+   WELCOME SCREEN — STEP 3
+   Styling the welcome screen
+   ========================================= */
+
+.welcomeScreen {
+    max-width: 500px;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 60px auto 30px;
+    padding: 30px 25px;
+    text-align: center;
+    background-color: #000398;
+    color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+}
+
+.welcomeScreen h2 {
+    margin: 0 0 22px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.welcomeScreen label {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.welcomeScreen input {
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+    margin: 0 auto 18px;
+    padding: 12px;
+    border: 2px solid #dddddd;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+.welcomeScreen input:focus {
+    outline: 3px solid #ffcc00;
+    border-color: #ffcc00;
+}
+
+.welcomeScreen button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #e32636;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    touch-action: manipulation;
+}
+
+.welcomeScreen button:hover {
+    background-color: #bd1e2d;
+}
+
+.welcomeScreen button:active {
+    transform: scale(0.98);
+}
+
+.nameMessage {
+    min-height: 1.2em;
+    margin: 12px 0 0;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* =========================================
+   PERSONALIZED GREETING
+   ========================================= */
+
+.greeting {
+    width: 90%;
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 25px auto 0;
+    padding: 10px;
+    text-align: center;
+    color: #000398;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Keep the quiz close beneath the greeting. */
+.greeting + .quizContainer {
+    margin-top: 15px;
+}
+
+/* =========================================
+   SMALL-SCREEN ADJUSTMENTS
+   ========================================= */
+
+@media (max-width: 600px) {
+    .welcomeScreen {
+        margin-top: 30px;
+        padding: 25px 18px;
+    }
+
+    .welcomeScreen h2 {
+        font-size: 1.7em;
+    }
+
+    .welcomeScreen label {
+        font-size: 1.15em;
+    }
+
+    .welcomeScreen input {
+        font-size: 16px;
+    }
+
+    .welcomeScreen button {
+        padding: 12px 22px;
+        font-size: 1em;
+    }
+
+    .greeting {
+        margin-top: 15px;
+        padding: 8px;
+        font-size: 1.6em;
+    }
+
+    .greeting + .quizContainer {
+        margin-top: 8px;
+    }
+}
