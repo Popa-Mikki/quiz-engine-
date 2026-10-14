@@ -72,7 +72,7 @@ brandName.textContent = "Students Companion";
 // Brand descriptor
 var brandDescriptor = document.createElement("div");
 brandDescriptor.className = "brandDescriptor";
-brandDescriptor.textContent = "THE HOUSE OF LEARNING";
+brandDescriptor.textContent = "YOUR PARTNER IN LEARNING";
 
 // Brand motto
 var brandMotto = document.createElement("div");
