@@ -1,3 +1,11 @@
+// Quiz configuration: title, subject, and instructions.
+// Existing question bank follows below, unchanged.
+var quizConfig = {
+    title: "Diversity of Matter",
+    subject: "Integrated Science",
+    instructions: "Choose the correct answer."
+};
+
 var questions = [
     {
         question: "An example of mixtures that can be separated by the method of filtration is (BECE 2017, q19)",
