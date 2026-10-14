@@ -1,4 +1,5 @@
 // Shuffle questions when quiz starts.
+function
 shuffleArray(questions);
 
 
