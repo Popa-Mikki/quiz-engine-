@@ -79,6 +79,19 @@ var brandMotto = document.createElement("div");
 brandMotto.className = "brandMotto";
 brandMotto.textContent = "Learn Today. Rise Tomorrow.";
 
+// Quiz details from the configuration.
+var quizTitleElement = document.createElement("h3");
+quizTitleElement.className = "quizTitle";
+quizTitleElement.textContent = quizConfig.title;
+
+var quizSubjectElement = document.createElement("p");
+quizSubjectElement.className = "quizSubject";
+quizSubjectElement.textContent = quizConfig.subject;
+
+var quizInstructionsElement = document.createElement("p");
+quizInstructionsElement.className = "quizInstructions";
+quizInstructionsElement.textContent = quizConfig.instructions;
+
 // Create the welcome heading.
 var welcomeHeading = document.createElement("h2");
 welcomeHeading.textContent = "Welcome!";
@@ -109,6 +122,9 @@ nameMessage.className = "nameMessage";
 welcomeScreen.appendChild(brandName);
 welcomeScreen.appendChild(brandDescriptor);
 welcomeScreen.appendChild(brandMotto);
+welcomeScreen.appendChild(quizTitleElement);
+welcomeScreen.appendChild(quizSubjectElement);
+welcomeScreen.appendChild(quizInstructionsElement);
 welcomeScreen.appendChild(welcomeHeading);
 welcomeScreen.appendChild(namePrompt);
 welcomeScreen.appendChild(userNameInput);
