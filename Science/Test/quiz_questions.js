@@ -5,7 +5,7 @@ var quizConfig = {
     instructions: "Choose the correct answer.",
 
     // Quiz access settings
-    accessMode: "individual",
+    accessMode: "open",
     accessId: "science-1"
 };
 
