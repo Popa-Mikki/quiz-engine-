@@ -16,6 +16,10 @@ var individualPermissions = [
         name: "Learner Example",
         passcode: "change-this-code",
         passcount: 3
+    },{
+        name: "Helen Kumaku",
+        passcode: "ara@20",
+        passcount: 2
     }
 
     // Add more individual learner records here.
