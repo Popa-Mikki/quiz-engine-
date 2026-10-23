@@ -17,9 +17,9 @@ var individualPermissions = [
         passcode: "change-this-code",
         passcount: 3
     },{
-        name: "Helen Kumaku",
-        passcode: "ara@20",
-        passcount: 2
+        name: "Michael Obeng",
+        passcode: "ice-CREAM-02",
+        passcount: -1
     }
 
     // Add more individual learner records here.
