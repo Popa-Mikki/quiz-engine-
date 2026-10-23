@@ -13,12 +13,10 @@
 
 var individualPermissions = [
     {
-        name: "Learner Example",
         passcode: "change-this-code",
         passcount: 3
     },{
-        name: "Michael Obeng",
-        passcode: "ice-CREAM-02",
+        passcode: "ice-CREAM",
         passcount: -1
     }
 
